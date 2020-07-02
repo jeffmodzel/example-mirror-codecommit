@@ -18,3 +18,6 @@ jobs:
           ${{ secrets.CODECOMMIT_SSH_PRIVATE_KEY }}
         ssh_username:                                   # <-- (for codecommit) you need to specify ssh-key-id as ssh username.
           ${{ secrets.CODECOMMIT_SSH_PRIVATE_KEY_ID }}
+    - uses: actions/hello-world-javascript-action@master
+      with:
+        who-to-greet: 'your mama'
