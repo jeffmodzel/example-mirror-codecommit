@@ -1,6 +1,9 @@
 name: Mirroring
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   to_codecommit:                                        # <-- different jobs are executed in parallel.
